@@ -107,7 +107,7 @@ if exist(validVarName, 'var')
             disp(columnData);
         
             % Apply findpeaks with a threshold based on the standard deviation
-            [pks, locs] = findpeaks(columnData, 'MinPeakProminence',1.0, 'MinPeakWidth',1.0, 'MinPeakHeight',2.5*pop_stdDev);
+            [pks, locs] = findpeaks(columnData, 'MinPeakProminence',1.0, 'MinPeakWidth',1.0, 'MinPeakHeight',2*pop_stdDev);
 
             % Display peaks and locations for debugging
             disp(['Peaks in Column ' num2str(col) ':']);
